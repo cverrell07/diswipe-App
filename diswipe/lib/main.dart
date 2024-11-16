@@ -1,3 +1,4 @@
+import 'package:diswipe/pages/home_page.dart';
 import 'package:diswipe/pages/sign_in_page.dart';
 import 'package:diswipe/pages/sign_up_page.dart';
 import 'package:diswipe/pages/splashscreen_page.dart';
@@ -26,7 +27,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const SplashScreen(),
         '/signin': (context) => const SignInPage(),
-        '/signup': (context) => const SignUpPage()
+        '/signup': (context) => const SignUpPage(),
+        '/home': (context) => const HomePage()
       },
     );
   }
