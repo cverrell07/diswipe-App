@@ -1,3 +1,4 @@
+import 'package:diswipe/styles/style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -45,14 +46,14 @@ class _IntroductionPageState extends State<IntroductionPage> {
       body: SafeArea(
         child: Center(
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24),
+            padding: const EdgeInsets.symmetric(horizontal: AppSpacing.large),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SvgPicture.asset(
                   'assets/images/diswipe_textLogo.svg',
-                  width: 30,
-                  height: 30,
+                  width: AppSpacing.xLarge,
+                  height: AppSpacing.xLarge,
                 ),
                 SizedBox(
                   height: 400,
@@ -71,21 +72,21 @@ class _IntroductionPageState extends State<IntroductionPage> {
                           Text(
                             _pages[index]["title"]!,
                             style: const TextStyle(
-                              fontSize: 24,
-                              fontWeight: FontWeight.bold,
+                              fontSize: AppFontSize.xLarge,
+                              fontWeight: AppFontWeight.bold,
                             ),
                             textAlign: TextAlign.center,
                           ),
-                          const SizedBox(height: 10),
+                          const SizedBox(height: AppSpacing.small),
                           Text(
                             _pages[index]["description"]!,
                             style: const TextStyle(
-                              fontSize: 14,
-                              color: Color.fromARGB(151, 47, 44, 42),
+                              fontSize: AppFontSize.medium,
+                              color: AppColors.black,
                             ),
                             textAlign: TextAlign.center,
                           ),
-                          const SizedBox(height: 30),
+                          const SizedBox(height: AppSpacing.large),
                           SvgPicture.asset(
                             _pages[index]["image"]!,
                             height: 200,
@@ -95,42 +96,42 @@ class _IntroductionPageState extends State<IntroductionPage> {
                     },
                   ),
                 ),
-                const SizedBox(height: 16),
+                const SizedBox(height: AppSpacing.medium),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: List.generate(_pages.length, (index) {
                     return Container(
-                      margin: const EdgeInsets.symmetric(horizontal: 4),
+                      margin: const EdgeInsets.symmetric(horizontal: AppSpacing.small / 2),
                       width: 12,
                       height: 12,
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         color: _currentPage == index
-                            ? const Color(0xffCE521C)
-                            : const Color.fromARGB(151, 200, 200, 200),
+                            ? AppColors.mainOrange
+                            : AppColors.gray,
                       ),
                     );
                   }),
                 ),
-                const SizedBox(height: 30),
+                const SizedBox(height: AppSpacing.large),
                 ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
                     elevation: 0,
-                    backgroundColor: const Color(0xffCE521C),
+                    backgroundColor: AppColors.mainOrange,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(100),
                     ),
                     padding: const EdgeInsets.symmetric(
-                      vertical: 10,
-                      horizontal: 120,
+                      vertical: AppSpacing.small,
+                      horizontal: 120.0,
                     ),
                   ),
                   child: const Text(
                     "Get Started!",
                     style: TextStyle(
-                      fontSize: 16,
-                      color: Color(0xffFFF0EA),
+                      fontSize: AppFontSize.large,
+                      color: AppColors.white,
                     ),
                   ),
                 ),
@@ -142,14 +143,14 @@ class _IntroductionPageState extends State<IntroductionPage> {
                         TextSpan(
                           text: 'Already have an account? ',
                           style: TextStyle(
-                            color: Color.fromARGB(151, 47, 44, 42),
+                            color: AppColors.black,
                           ),
                         ),
                         TextSpan(
                           text: 'Sign me in!',
                           style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Color(0xffCE521C),
+                            fontWeight: AppFontWeight.bold,
+                            color: AppColors.mainOrange,
                           ),
                         ),
                       ],
