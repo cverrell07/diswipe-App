@@ -1,15 +1,15 @@
 import 'package:diswipe/styles/style.dart';
-import 'package:diswipe/widgets/sign_in_form_widget.dart';
+import 'package:diswipe/widgets/sign_up_form_widget.dart';
 import 'package:flutter/material.dart';
 
-class SignInPage extends StatefulWidget {
-  const SignInPage({super.key});
+class SignUpPage extends StatefulWidget {
+  const SignUpPage({super.key});
 
   @override
-  State<SignInPage> createState() => _SignInPageState();
+  State<SignUpPage> createState() => _SignUpPageState();
 }
 
-class _SignInPageState extends State<SignInPage> {
+class _SignUpPageState extends State<SignUpPage> {
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
@@ -45,17 +45,17 @@ class _SignInPageState extends State<SignInPage> {
                             text: const TextSpan(
                               children: [
                                 TextSpan(
-                                  text: 'Welcome\n',
+                                  text: 'Hello\n',
                                   style: TextStyle(
-                                    color: AppColors.mainOrange,
+                                    color: AppColors.black,
                                     fontSize: AppFontSize.xLarge * 2,
                                     fontWeight: AppFontWeight.bold,
                                   ),
                                 ),
                                 TextSpan(
-                                  text: 'back!',
+                                  text: 'there!',
                                   style: TextStyle(
-                                    color: AppColors.black,
+                                    color: AppColors.mainOrange,
                                     fontSize: AppFontSize.xLarge * 2,
                                     fontWeight: AppFontWeight.bold,
                                   ),
@@ -65,7 +65,7 @@ class _SignInPageState extends State<SignInPage> {
                           ),
                           const SizedBox(height: AppSpacing.small),
                           const Text(
-                            'Enter your details to access your account. We will get you back on track!',
+                            'Start swiping by making your account first for better personalization.',
                             style: TextStyle(
                               color: AppColors.gray,
                               fontSize: AppFontSize.medium,
@@ -73,7 +73,7 @@ class _SignInPageState extends State<SignInPage> {
                             ),
                           ),
                           const SizedBox(height: AppSpacing.large),
-                          const SignInForm(),
+                          const SignUpForm(),
                           const SizedBox(height: AppSpacing.medium),
                           Align(
                             alignment: Alignment.center,
@@ -83,13 +83,13 @@ class _SignInPageState extends State<SignInPage> {
                               hoverColor: Colors.transparent,
                               highlightColor: Colors.transparent,
                               onTap: () {
-                                Navigator.of(context).pushNamed('/signup');
+                                Navigator.of(context).pushNamed('/signin');
                               },
                               child: RichText(
                                 text: const TextSpan(
                                   children: [
                                     TextSpan(
-                                      text: 'Don\'t have any account? ',
+                                      text: 'Already have an account? ',
                                       style: TextStyle(
                                         color: AppColors.gray,
                                         fontSize: AppFontSize.large,
@@ -97,7 +97,7 @@ class _SignInPageState extends State<SignInPage> {
                                       ),
                                     ),
                                     TextSpan(
-                                      text: 'Make me a new one',
+                                      text: 'Sign me in',
                                       style: TextStyle(
                                         color: AppColors.mainOrange,
                                         fontSize: AppFontSize.large,

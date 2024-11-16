@@ -1,4 +1,5 @@
 import 'package:diswipe/pages/sign_in_page.dart';
+import 'package:diswipe/pages/sign_up_page.dart';
 import 'package:diswipe/pages/splashscreen_page.dart';
 import 'package:diswipe/styles/style.dart';
 import 'package:flutter/material.dart';
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const SplashScreen(),
         '/signin': (context) => const SignInPage(),
+        '/signup': (context) => const SignUpPage()
       },
     );
   }
