@@ -43,6 +43,7 @@ class _IntroductionPageState extends State<IntroductionPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.white,
       body: SafeArea(
         child: Center(
           child: Padding(
@@ -115,7 +116,11 @@ class _IntroductionPageState extends State<IntroductionPage> {
                 ),
                 const SizedBox(height: AppSpacing.large),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushNamed(
+                      '/signup',
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     elevation: 0,
                     backgroundColor: AppColors.mainOrange,
@@ -136,7 +141,11 @@ class _IntroductionPageState extends State<IntroductionPage> {
                   ),
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushNamed(
+                      '/signin',
+                    );
+                  },
                   child: RichText(
                     text: const TextSpan(
                       children: <TextSpan>[

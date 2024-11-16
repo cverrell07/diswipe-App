@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   static const Color mainOrange = Color(0xffCE521C); 
-  static const Color white = Color(0xffFFF0EA); 
+  static const Color white = Color(0xffFFFFFF); 
   static const Color black = Color(0xff2F2C2A);
-  static const Color gray = Color.fromARGB(151, 200, 200, 200);
+  static const Color oldGray = Color.fromARGB(164, 47, 44, 42);
+  static const Color gray = Color.fromARGB(132, 47, 44, 42);
   static const Color lightGray = Color.fromARGB(199, 235, 235, 235);
+  static const Color red = Color(0xffCB3838);
 }
 
 class AppSpacing {
