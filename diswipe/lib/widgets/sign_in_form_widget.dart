@@ -106,7 +106,6 @@ class _SignInFormState extends State<SignInForm> {
               decoration: InputDecoration(
                 labelText: 'Enter your password',
                 labelStyle: const TextStyle(
-                  fontFamily: 'Albert Sans',
                   letterSpacing: 0.0,
                   fontSize: 14,  
                   color: AppColors.gray, 
