@@ -1,3 +1,4 @@
+import 'package:diswipe/models/food_model.dart';
 import 'package:diswipe/styles/style.dart';
 import 'package:diswipe/widgets/filter_card_widget.dart';
 import 'package:flutter/material.dart';
@@ -25,16 +26,52 @@ class _HomePageState extends State<HomePage> {
     Restaurant(
       name: 'Ayam Geprek Gold Chick, Binus',
       imageUrl: 'assets/images/goldChicken_coverImage.png',
+      location: 'Jl. Kembang Kerep No.15, Kemanggisan, Jakarta Barat',
       distance: 0.13,
       rating: 4.9,
       category: 'Might be Your Favorites',
+      minDeliveryTime: 15, 
+      maxDeliveryTime: 25, 
+      review: 120, 
+      foods: [
+        Food(
+          name: 'Ayam Geprek Level 5',
+          description: 'Ayam geprek pedas dengan level 5 untuk pencinta makanan pedas.',
+          price: 25000,
+          imageUrl: 'assets/images/ayam_geprek.jpg',
+        ),
+        Food(
+          name: 'Paket Geprek Spesial',
+          description: 'Paket spesial ayam geprek dengan nasi, sambal, dan tambahan kerupuk.',
+          price: 30000,
+          imageUrl: 'assets/images/paket_geprek.jpg',
+        ),
+      ],
     ),
     Restaurant(
       name: 'Truffle Belly, Binus',
+      location: 'Jl. Anggrek Rosliana No.8, Kemanggisan, Jakarta Barat',
       imageUrl: 'assets/images/truffleBelly_coverImage.png',
       distance: 0.29,
       rating: 4.7,
       category: 'Might be Your Favorites',
+      minDeliveryTime: 20, 
+      maxDeliveryTime: 30, 
+      review: 85, 
+      foods: [
+        Food(
+          name: 'Truffle Chicken Rice',
+          description: 'Nasi dengan ayam berlapis saus truffle khas yang lezat.',
+          imageUrl: 'assets/images/truffle_chicken_rice.jpg',
+          price: 45000,
+        ),
+        Food(
+          name: 'Truffle Fries',
+          description: 'Kentang goreng crispy dengan bumbu truffle.',
+          imageUrl: 'assets/images/truffle_fries.jpg',
+          price: 35000,
+        ),
+      ],
     ),
   ];
 
@@ -57,8 +94,8 @@ class _HomePageState extends State<HomePage> {
                         'Location',
                         style: TextStyle(
                           color: AppColors.mainOrange,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
+                          fontWeight: FontWeight.normal,
+                          fontSize: 12,
                         ),
                       ),
                       SizedBox(height: 4),
@@ -74,8 +111,9 @@ class _HomePageState extends State<HomePage> {
                             child: Text(
                               'Jl. Raya Kb. Jeruk No.27, RT.1/RW.9, Kemanggisan, Kec. Palmerah, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11530',
                               style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 14,
+                                color: AppColors.black,
+                                fontWeight: FontWeight.w500,
+                                fontSize: 16,
                               ),
                               overflow: TextOverflow.ellipsis,
                               maxLines: 1,
