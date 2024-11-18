@@ -45,7 +45,7 @@ class NavBar extends StatelessWidget {
           ),
         ),
         Positioned(
-          top: -35,
+          top: -30,
           left: MediaQuery.of(context).size.width / 2 - 30,
           child: Transform.rotate(
             angle: 45 * 3.141592653589793 / 180,
@@ -74,10 +74,10 @@ class NavBar extends StatelessWidget {
                 angle: -45 * 3.141592653589793 / 180,
                 child: IconButton(
                   onPressed: () {},
-                  icon: const Icon(
-                    Icons.layers,
+                  icon: Image.asset(
+                    'assets/icons/swipe_icon.png',
+                    width: 35,
                     color: AppColors.white,
-                    size: 40,
                   ),
                 ),
               ),
