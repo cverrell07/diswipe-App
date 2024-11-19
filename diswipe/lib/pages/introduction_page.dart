@@ -117,9 +117,7 @@ class _IntroductionPageState extends State<IntroductionPage> {
                 const SizedBox(height: AppSpacing.large),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.of(context).pushNamed(
-                      '/signup',
-                    );
+                    Navigator.of(context).pushReplacementNamed('/signup');
                   },
                   style: ElevatedButton.styleFrom(
                     elevation: 0,
@@ -142,9 +140,7 @@ class _IntroductionPageState extends State<IntroductionPage> {
                 ),
                 TextButton(
                   onPressed: () {
-                    Navigator.of(context).pushNamed(
-                      '/signin',
-                    );
+                    Navigator.of(context).pushReplacementNamed('/signin');
                   },
                   child: RichText(
                     text: const TextSpan(

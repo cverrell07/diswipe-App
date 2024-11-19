@@ -2,7 +2,7 @@ import 'package:diswipe/pages/restaurant_detail_page.dart';
 import 'package:flutter/material.dart';
 import 'package:diswipe/styles/style.dart';
 import 'package:diswipe/widgets/restaurant_card_widget.dart';
-import '../models/restaurant.dart';
+import '../models/restaurant_model.dart';
 
 class HomeSectionWidget extends StatelessWidget {
   final String title;

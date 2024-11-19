@@ -31,7 +31,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_svg: ^2.0.7
-
+  swipe_cards: ^2.0.0+1
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -61,11 +61,13 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/diswipe_textLogo.svg
     - assets/icons/delivery_icon.svg
     - assets/icons/swipeRight_icon.svg
     - assets/icons/swipeLeft_icon.svg
     - assets/icons/swipe_icon.png
+    - assets/icons/back_icon.png
+    - assets/icons/ai_icon.png
+    - assets/images/diswipe_textLogo.svg
     - assets/images/promotion_banner.png
     - assets/images/goldChicken_coverImage.png
     - assets/images/truffleBelly_coverImage.png
@@ -73,6 +75,16 @@ flutter:
     - assets/images/paket_geprek.jpg
     - assets/images/truffle_chicken_rice.jpg
     - assets/images/truffle_fries.jpg
+    - assets/images/chicken_tikka_masala.jpg
+    - assets/images/chocolate_lava_cake.jpg
+    - assets/images/classic_cheeseburger.jpg
+    - assets/images/grilled_salmon_salad.jpg
+    - assets/images/hot_and_sour_soup.jpg
+    - assets/images/matcha_cheesecake.jpg
+    - assets/images/rendang.jpg
+    - assets/images/spicy_wonton.jpg
+    - assets/images/thai_green_curry.jpg
+    - assets/images/vegetarian_sushi_platter.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

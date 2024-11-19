@@ -73,7 +73,9 @@ class NavBar extends StatelessWidget {
               child: Transform.rotate(
                 angle: -45 * 3.141592653589793 / 180,
                 child: IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushNamed('/diswipe');
+                  },
                   icon: Image.asset(
                     'assets/icons/swipe_icon.png',
                     width: 35,

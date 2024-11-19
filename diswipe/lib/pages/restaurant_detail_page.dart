@@ -2,7 +2,7 @@ import 'package:diswipe/styles/style.dart';
 import 'package:diswipe/widgets/food_card_widget.dart';
 import 'package:diswipe/widgets/restaurant_info_widget.dart';
 import 'package:flutter/material.dart';
-import '../models/restaurant.dart';
+import '../models/restaurant_model.dart';
 
 class RestaurantDetailPage extends StatelessWidget {
   final Restaurant restaurant;

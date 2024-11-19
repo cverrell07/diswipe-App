@@ -1,3 +1,4 @@
+import 'package:diswipe/pages/diswipe_page.dart';
 import 'package:diswipe/pages/home_page.dart';
 import 'package:diswipe/pages/sign_in_page.dart';
 import 'package:diswipe/pages/sign_up_page.dart';
@@ -28,7 +29,10 @@ class MyApp extends StatelessWidget {
         '/': (context) => const SplashScreen(),
         '/signin': (context) => const SignInPage(),
         '/signup': (context) => const SignUpPage(),
-        '/home': (context) => const HomePage()
+        '/home': (context) => const HomePage(),
+        '/diswipe': (context) => const DiswipePage(),
+        // recommendation page
+        // my preferences page
       },
     );
   }
