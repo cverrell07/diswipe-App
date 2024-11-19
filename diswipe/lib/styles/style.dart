@@ -8,6 +8,7 @@ class AppColors {
   static const Color gray = Color.fromARGB(132, 47, 44, 42);
   static const Color lightGray = Color.fromARGB(199, 235, 235, 235);
   static const Color red = Color(0xffCB3838);
+  static const Color green = Color(0xffD8FFB9);
 }
 
 class AppSpacing {
