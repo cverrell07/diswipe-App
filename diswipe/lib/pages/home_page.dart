@@ -1,8 +1,7 @@
-import 'package:diswipe/models/food_model.dart';
+import 'package:diswipe/dummy/dummy_data.dart';
 import 'package:diswipe/styles/style.dart';
 import 'package:diswipe/widgets/filter_card_widget.dart';
 import 'package:flutter/material.dart';
-import '../models/restaurant_model.dart';
 import '../widgets/home_section_widget.dart';
 import '../widgets/navigation_bar_widget.dart';
 
@@ -21,83 +20,6 @@ class _HomePageState extends State<HomePage> {
       _currentIndex = index;
     });
   }
-
-  final List<Restaurant> restaurants = [
-    Restaurant(
-      name: 'Ayam Geprek Gold Chick, Binus',
-      imageUrl: 'assets/images/goldChicken_coverImage.png',
-      location: 'Jl. Kembang Kerep No.15, Kemanggisan, Jakarta Barat',
-      distance: 0.13,
-      rating: 4.9,
-      category: 'Might be Your Favorites',
-      minDeliveryTime: 15,
-      maxDeliveryTime: 25,
-      review: 120,
-      foods: [
-        Food(
-          name: 'Ayam Geprek Level 5',
-          description: 'Ayam geprek pedas dengan level 5 untuk pencinta makanan pedas.',
-          price: 25000,
-          imageUrl: 'assets/images/ayam_geprek.jpg',
-          spicyLevel: 5,
-          isHalal: true,
-          calories: 300,
-          portion: 1,
-          ingredients: 'Ayam, Tepung, Sambal, Rempah',
-          allergens: 'Tepung terigu, cabai',
-        ),
-        Food(
-          name: 'Paket Geprek Spesial',
-          description: 'Paket spesial ayam geprek dengan nasi, sambal, dan tambahan kerupuk.',
-          price: 30000,
-          imageUrl: 'assets/images/paket_geprek.jpg',
-          spicyLevel: 3,
-          isHalal: true,
-          calories: 500,
-          portion: 1,
-          ingredients: 'Ayam, Nasi, Kerupuk, Sambal',
-          allergens: 'Tepung terigu, cabai',
-        ),
-      ],
-    ),
-    Restaurant(
-      name: 'Truffle Belly, Binus',
-      location: 'Jl. Anggrek Rosliana No.8, Kemanggisan, Jakarta Barat',
-      imageUrl: 'assets/images/truffleBelly_coverImage.png',
-      distance: 0.29,
-      rating: 4.7,
-      category: 'Might be Your Favorites',
-      minDeliveryTime: 20,
-      maxDeliveryTime: 30,
-      review: 85,
-      foods: [
-        Food(
-          name: 'Truffle Chicken Rice',
-          description: 'Nasi dengan ayam berlapis saus truffle khas yang lezat.',
-          imageUrl: 'assets/images/truffle_chicken_rice.jpg',
-          price: 45000,
-          spicyLevel: 0,
-          isHalal: true,
-          calories: 600,
-          portion: 1,
-          ingredients: 'Ayam, Nasi, Saus Truffle',
-          allergens: 'Susu, Gluten',
-        ),
-        Food(
-          name: 'Truffle Fries',
-          description: 'Kentang goreng crispy dengan bumbu truffle.',
-          imageUrl: 'assets/images/truffle_fries.jpg',
-          price: 35000,
-          spicyLevel: 0,
-          isHalal: true,
-          calories: 450,
-          portion: 1,
-          ingredients: 'Kentang, Minyak, Saus Truffle',
-          allergens: 'Susu',
-        ),
-      ],
-    ),
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -181,12 +103,12 @@ class _HomePageState extends State<HomePage> {
                 const SizedBox(height: 40.0),
                 HomeSectionWidget(
                   title: 'Might be Your Favorites',
-                  restaurants: restaurants.where((r) => r.category == 'Might be Your Favorites').toList(),
+                  restaurants: dummyRestaurants.where((r) => r.category == 'Might be Your Favorites').toList(),
                 ),
                 const SizedBox(height: 20.0),
                 HomeSectionWidget(
                   title: 'Top Rated Restaurants',
-                  restaurants: restaurants,
+                  restaurants: List.from(dummyRestaurants)..sort((a, b) => b.rating.compareTo(a.rating)),
                 ),
               ],
             ),

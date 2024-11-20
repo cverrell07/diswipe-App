@@ -95,7 +95,6 @@ class _SignUpFormState extends State<SignUpForm> {
                 fillColor: AppColors.white,  
               ),
               style: const TextStyle(
-                fontFamily: 'Albert Sans',
                 letterSpacing: 0.0,
                 fontSize: 16,  
                 color: AppColors.black,  
@@ -160,7 +159,6 @@ class _SignUpFormState extends State<SignUpForm> {
                 fillColor: AppColors.white,  
               ),
               style: const TextStyle(
-                fontFamily: 'Albert Sans',
                 letterSpacing: 0.0,
                 fontSize: 16,  
                 color: AppColors.black,  
@@ -429,7 +427,7 @@ class _SignUpFormState extends State<SignUpForm> {
             child: const Text(
               'Sign Up',
               style: TextStyle(
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w500,
                     fontSize: 16,
                     color: AppColors.white,
                     letterSpacing: 0.0,

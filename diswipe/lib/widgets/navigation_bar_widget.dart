@@ -55,8 +55,8 @@ class NavBar extends StatelessWidget {
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
-                    AppColors.mainOrange.withOpacity(0.8),
-                    const Color.fromARGB(255, 247, 179, 150).withOpacity(0.9),
+                    AppColors.mainOrange.withOpacity(1),
+                    const Color.fromARGB(255, 247, 179, 150).withOpacity(1),
                   ],
                   begin: Alignment.bottomCenter,
                   end: Alignment.centerLeft,
