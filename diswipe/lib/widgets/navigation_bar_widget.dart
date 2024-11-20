@@ -34,11 +34,11 @@ class NavBar extends StatelessWidget {
             child: Row(
               children: [
                 NavigationItem(icon: Icons.home, index: 0, currentIndex: currentIndex, onTap: onTap),
-                const SizedBox(width: 30,),
+                const SizedBox(width: 20,),
                 NavigationItem(icon: Icons.search, index: 1, currentIndex: currentIndex, onTap: onTap),
-                const SizedBox(width: 100,),
+                const SizedBox(width: 110,),
                 NavigationItem(icon: Icons.access_time, index: 2, currentIndex: currentIndex, onTap: onTap),
-                const SizedBox(width: 24,),
+                const SizedBox(width: 20,),
                 NavigationItem(icon: Icons.person, index: 3, currentIndex: currentIndex, onTap: onTap),
               ],
             ),
