@@ -39,6 +39,7 @@ class RestaurantDetailPage extends StatelessWidget {
             Image.asset(
               restaurant.imageUrl,
               width: double.infinity,
+              height: 200,
               fit: BoxFit.cover,
             ),
             Padding(

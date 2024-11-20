@@ -69,6 +69,7 @@ flutter:
     - assets/icons/ai_icon.png
     - assets/images/diswipe_textLogo.svg
     - assets/images/promotion_banner.png
+    - assets/images/ayam_geprek_gold_chick_coverImage.jpg
     - assets/images/goldChicken_coverImage.png
     - assets/images/truffleBelly_coverImage.png
     - assets/images/ayam_geprek.jpg
@@ -85,6 +86,26 @@ flutter:
     - assets/images/spicy_wonton.jpg
     - assets/images/thai_green_curry.jpg
     - assets/images/vegetarian_sushi_platter.jpg
+    - assets/images/burger_haven_coverImage.jpg
+    - assets/images/california_roll.jpg
+    - assets/images/mie_goreng_seafood.jpg
+    - assets/images/mie_goreng_vegetarian.jpg
+    - assets/images/mie_goreng.jpg
+    - assets/images/nasi_goreng_mania_coverImage.jpg
+    - assets/images/nasi_goreng_seafood.jpg
+    - assets/images/nasi_goreng_vegetarian.jpg
+    - assets/images/nasi_goreng.jpg
+    - assets/images/salad_mix.jpg
+    - assets/images/salmon_sushi.jpg
+    - assets/images/seafood_plaza_coverImage.jpg
+    - assets/images/spicy_chicken_burger.jpg
+    - assets/images/steamed_rice.jpg
+    - assets/images/sushi_house_coverImage.jpg
+    - assets/images/sushi_rolls.jpg
+    - assets/images/vegetarian_sushi.jpg
+    - assets/images/veggie_burger.jpg
+    - assets/images/empty_state_image.png
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
