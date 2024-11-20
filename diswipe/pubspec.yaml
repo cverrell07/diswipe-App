@@ -47,6 +47,12 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.11.0
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/diswipe_iconLogo.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -67,6 +73,7 @@ flutter:
     - assets/icons/swipe_icon.png
     - assets/icons/back_icon.png
     - assets/icons/ai_icon.png
+    - assets/icons/diswipe_iconLogo.png
     - assets/images/diswipe_textLogo.svg
     - assets/images/promotion_banner.png
     - assets/images/ayam_geprek_gold_chick_coverImage.jpg
@@ -106,6 +113,7 @@ flutter:
     - assets/images/veggie_burger.jpg
     - assets/images/empty_state_image.png
 
+  
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
@@ -118,17 +126,17 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-Italic.ttf
+          style: italic
+    
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package

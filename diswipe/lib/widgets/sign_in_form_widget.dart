@@ -196,7 +196,7 @@ class _SignInFormState extends State<SignInForm> {
             child: const Text(
               'Sign In',
               style: TextStyle(
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.w500,
                     fontSize: 16,
                     color: AppColors.white,
                     letterSpacing: 0.0,
