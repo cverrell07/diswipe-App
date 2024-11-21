@@ -46,7 +46,7 @@ class RestaurantCard extends StatelessWidget {
                   height: 48,
                   child: Text(
                     restaurant.name,
-                    style: const TextStyle(fontWeight: FontWeight.bold),
+                    style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 12),
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                     textAlign: TextAlign.start,

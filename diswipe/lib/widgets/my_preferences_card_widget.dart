@@ -42,19 +42,19 @@ class MyPreferencesCardWidget extends StatelessWidget {
                   Text(
                     food.name,
                     style: const TextStyle(
-                      fontSize: 24,
+                      fontSize: 16,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  const SizedBox(height: 5), 
+                  const SizedBox(height: 10),
                   Text(
                     food.description,
                     style: const TextStyle(
-                      fontSize: 14,
+                      fontSize: 12,
                       color: AppColors.gray,
                     ),
                     overflow: TextOverflow.ellipsis,
-                    maxLines: 2,
+                    maxLines: 3,
                   ),
                 ],
               ),

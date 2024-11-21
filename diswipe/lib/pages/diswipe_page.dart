@@ -40,7 +40,7 @@ class _DiswipePageState extends State<DiswipePage> {
                 Flexible(
                   child: Text(
                     message,
-                    style: TextStyle(color: textColor, fontSize: 16, fontWeight: FontWeight.w500),
+                    style: TextStyle(color: textColor, fontSize: 12, fontWeight: FontWeight.w500),
                     overflow: TextOverflow.ellipsis,
                     maxLines: 1,
                   ),
