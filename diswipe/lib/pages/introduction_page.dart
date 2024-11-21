@@ -82,7 +82,7 @@ class _IntroductionPageState extends State<IntroductionPage> {
                           Text(
                             _pages[index]["description"]!,
                             style: const TextStyle(
-                              fontSize: AppFontSize.medium,
+                              fontSize: AppFontSize.small,
                               color: AppColors.black,
                             ),
                             textAlign: TextAlign.center,
@@ -103,8 +103,8 @@ class _IntroductionPageState extends State<IntroductionPage> {
                   children: List.generate(_pages.length, (index) {
                     return Container(
                       margin: const EdgeInsets.symmetric(horizontal: AppSpacing.small / 2),
-                      width: 12,
-                      height: 12,
+                      width: 8,
+                      height: 8,
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         color: _currentPage == index

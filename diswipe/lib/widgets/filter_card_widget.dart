@@ -39,7 +39,7 @@ class FilterCard extends StatelessWidget {
             style: const TextStyle(
               color: AppColors.mainOrange,
               fontSize: 14,
-              fontWeight: FontWeight.bold,
+              fontWeight: FontWeight.w500,
             ),
           ),
         ],

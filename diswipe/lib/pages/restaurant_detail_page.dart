@@ -82,7 +82,7 @@ class RestaurantDetailPage extends StatelessWidget {
                       decoration: InputDecoration(
                         prefixIcon: const Icon(Icons.search, color: AppColors.gray),
                         hintText: 'Search in ${restaurant.name}...',
-                        hintStyle: const TextStyle(color: AppColors.gray, fontSize: 15.0),
+                        hintStyle: const TextStyle(color: AppColors.gray, fontSize: 12.0),
                         border: const OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(100)),
                           borderSide: BorderSide(color: AppColors.mainOrange), 

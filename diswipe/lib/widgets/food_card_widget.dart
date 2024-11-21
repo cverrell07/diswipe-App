@@ -40,8 +40,8 @@ class FoodCardWidget extends StatelessWidget {
                   Text(
                     food.name,
                     style: const TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w500,
                       color: AppColors.black
                     ),
                   ),
@@ -60,7 +60,7 @@ class FoodCardWidget extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'Rp${food.price}',
+                        'Rp${food.price},-',
                         style: const TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,

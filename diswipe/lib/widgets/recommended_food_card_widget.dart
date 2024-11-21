@@ -56,7 +56,7 @@ class RecommendedFoodCardWidget extends StatelessWidget {
                           child: Text(
                             restaurant.name,
                             style: const TextStyle(
-                              fontSize: 16,
+                              fontSize: 12,
                               fontWeight: FontWeight.w300,
                               color: AppColors.black
                             ),

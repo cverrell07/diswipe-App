@@ -37,7 +37,7 @@ class _HomePageState extends State<HomePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Location',
+                        'LOCATION',
                         style: TextStyle(
                           color: AppColors.mainOrange,
                           fontWeight: FontWeight.normal,
@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> {
                               style: TextStyle(
                                 color: AppColors.black,
                                 fontWeight: FontWeight.w500,
-                                fontSize: 16,
+                                fontSize: 12,
                               ),
                               overflow: TextOverflow.ellipsis,
                               maxLines: 1,
